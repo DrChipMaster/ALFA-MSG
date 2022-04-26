@@ -61,10 +61,13 @@ add_message_files(
   FILES
   ConfigMessage.msg
   MetricMessage.msg
-  AlfaConfigs.msg
   AlfaMetrics.msg
 )
-
+add_service_files(
+   FILES
+   AlfaConfigure.srv
+#   Service2.srv
+ )
 
 generate_messages(
   DEPENDENCIES
@@ -74,11 +77,7 @@ generate_messages(
 
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+
 
 ## Generate actions in the 'action' folder
 # add_action_files(
