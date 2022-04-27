@@ -62,6 +62,7 @@ add_message_files(
   ConfigMessage.msg
   MetricMessage.msg
   AlfaMetrics.msg
+  AlfaAlivePing.msg
 )
 add_service_files(
    FILES
